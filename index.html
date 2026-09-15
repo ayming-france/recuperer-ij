@@ -508,7 +508,7 @@
     </section>
 
     <!-- ========== SLIDE 10: OPTIONS ========== -->
-    <section class="slide" data-chapter="options" data-slide="10" style="background: var(--bg-light);">
+    <section class="slide options-slide" data-chapter="options" data-slide="10">
       <div class="slide-inner">
         <h1 class="slide-title">
           Options pour aller<br>
@@ -516,19 +516,22 @@
         </h1>
 
         <style>
-          .option-card { text-decoration: none; color: inherit; border-radius: var(--radius-xl); }
+          .option-card { text-decoration: none; color: inherit; border-radius: var(--radius-xl); max-width: 380px; }
           .option-card .column-card { cursor: pointer; }
           .option-card .card-image { position: relative; overflow: hidden; border-radius: var(--radius-lg); }
           .option-card .card-image img { transition: transform 0.4s ease; }
-          .option-card .card-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(0,61,121,0.7) 0%, rgba(10,179,140,0.6) 100%); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease; border-radius: var(--radius-lg); }
+          .option-card .card-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(var(--blue-dark-rgb), 0.7) 0%, rgba(var(--gradient-green-end-rgb), 0.6) 100%); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s ease; border-radius: var(--radius-lg); }
           .option-card .card-overlay span { color: #fff; font-size: var(--font-14); font-weight: var(--weight-semibold); padding: var(--space-10) var(--space-24); border: 2px solid #fff; border-radius: var(--radius-30); letter-spacing: 0.5px; transition: background 0.3s ease; }
           .option-card:hover .card-overlay { opacity: 1; }
           .option-card:hover .card-image img { transform: scale(1.05); }
           .option-card:hover .card-overlay span { background: rgba(255,255,255,0.15); }
           .option-badge { display: inline-block; padding: var(--space-4) var(--space-14); border-radius: var(--radius-2xl); font-size: var(--font-11); font-weight: var(--weight-bold); letter-spacing: 1px; text-transform: uppercase; margin-bottom: var(--space-8); background: linear-gradient(135deg, var(--blue-dark), var(--gradient-green-end)); color: #fff; }
+          .options-slide { background: var(--bg-light); }
+          .options-row { display: flex; justify-content: center; width: 100%; max-width: 1100px; }
+          .ancrage-title { text-align: left; margin-bottom: var(--space-28); }
         </style>
-        <div style="display: flex; justify-content: center; width: 100%; max-width: 1100px;">
-          <a href="https://www.ayming.fr/ressources-humaines/arrets-de-travail/remboursements-ijss-et-prevoyance/?utm_source=slides-sales&utm_medium=print&utm_campaign=recuperer-ij" target="_blank" class="option-card" style="max-width: 380px;">
+        <div class="options-row">
+          <a href="https://www.ayming.fr/ressources-humaines/arrets-de-travail/remboursements-ijss-et-prevoyance/?utm_source=slides-sales&utm_medium=print&utm_campaign=recuperer-ij" target="_blank" class="option-card">
             <div class="column-card">
               <div class="card-image">
                 <img src="https://ayming-france.github.io/assets/imagery/hub-cards/Recuperer-prevoyance.jpg" alt="Recouvrement prevoyance">
@@ -555,7 +558,7 @@
         <style>
           .testimonial-card .testimonial-front img { filter: brightness(0.8) saturate(0.85); transition: filter 0.4s ease; }
           .testimonial-card:hover .testimonial-front img { filter: brightness(0.65) saturate(0.8); }
-            .next-step { margin-top: var(--space-34); padding: var(--space-18) var(--space-26); border-radius: var(--radius-14); background: linear-gradient(90deg, rgba(15,167,226,0.10), rgba(10,179,140,0.10)); border: 1px solid rgba(17,169,230,0.35); font-size: var(--font-18); font-weight: var(--weight-bold); color: var(--blue-dark); text-align: center; }
+            .next-step { margin-top: var(--space-34); padding: var(--space-18) var(--space-26); border-radius: var(--radius-14); background: linear-gradient(90deg, rgba(var(--blue-primary-rgb), 0.10), rgba(var(--gradient-green-end-rgb), 0.10)); border: 1px solid rgba(var(--blue-primary-rgb), 0.35); font-size: var(--font-18); font-weight: var(--weight-bold); color: var(--blue-dark); text-align: center; }
   </style>
         <div class="testimonial-grid count-2">
 
@@ -629,7 +632,7 @@
       <div class="slide-inner">
         <div class="ancrage-layout">
           <div class="ancrage-text">
-            <h1 class="slide-title" style="text-align: left; margin-bottom: 28px;">Un fort ancrage <strong>en France</strong>...</h1>
+            <h1 class="slide-title ancrage-title">Un fort ancrage <strong>en France</strong>...</h1>
             <p>Nos &eacute;quipes locales accompagnent au quotidien nos clients dans leur d&eacute;veloppement et leurs transformations <strong>en s'appuyant sur un &eacute;cosyst&egrave;me de professionnels en r&eacute;gions</strong> :</p>
             <p>experts scientifiques, experts comptables, &eacute;tablissements bancaires, p&ocirc;les de comp&eacute;titivit&eacute;, f&eacute;d&eacute;rations professionnelles, avec un maillage de cabinets d'avocats et de m&eacute;decins ind&eacute;pendants.</p>
           </div>
